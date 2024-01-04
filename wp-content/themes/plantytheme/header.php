@@ -13,16 +13,14 @@
 
 <body>
     <header>
-        <nav class="menu-item">
-            <a href="../index.php">
-                <img src="assets/images/Logo.png/" alt="Logo Planty"                >
+        <nav class="navbar">
+            <a href="<?= home_url() ?>">
+                <img class="logo-header" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/Group-1.jpg" alt="Logo Planty"                >
             </a>
-            <div>
-                <?php
-                wp_nav_menu([
-                'theme_location' => 'header',
-                ])
-                ?>
-            </div>
+            <?php
+            wp_nav_menu([
+            'theme_location' => 'main-menu',
+            ])
+            ?>
         </nav>
     </header>
