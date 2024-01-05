@@ -23,15 +23,15 @@ a {
 
 a:hover {
     color: #000000;
+    font-size: 13px;
+    font-weight: bold;
 }
 
-/**HEADER**/
+body {
+    background-color: #ECE2DA;
+}
 
-
-
-.h1-header {
-    font-weight: 800;
-     }
+/**HEADER NAV**/
 
 .container_class {
     width: 100%;
@@ -40,17 +40,69 @@ a:hover {
 .navbar,.menu {
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+.navbar {
+    background-color: #FFFFFF;
+    width:auto;
+    height: 80px;
 }
 
 .menu-principal-container {
     margin-left: auto;
 }
 
-.btn-command {
-    background-color: #3B8E46;
-}
-
 .logo-header {
     width: 201px;
     height: 19px;
+    padding-left: 37px;
 }
+
+.menu-contact {
+    height: 80px;
+    width: 236px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-command {
+    background-color: #DC9F96;
+    height: 80px;
+    width: 236px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-command a {
+    color: #FFFFFF;
+}
+
+.btn-command:hover {
+    background-color: #C02E44;
+}
+
+
+/**HEADER TITLE**/
+
+.header {
+    margin-top: 80px;
+}
+
+.h1-header {
+    font-weight: 800;
+     }
+
+
+/**MAIN**/
+.img-feuille-gauche, .img-feuille-droite {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+
