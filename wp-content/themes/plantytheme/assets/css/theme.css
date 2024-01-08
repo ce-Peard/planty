@@ -97,6 +97,16 @@ body {
 
 
 /**MAIN**/
+.canette-page-accueil {
+    height: 620px;
+    background-color: transparent;
+    background: 
+        url("/planty/wp-content/uploads/2024/01/cannette-planty.png") center no-repeat,
+        url("/planty/wp-content/uploads/2024/01/feuille-gauche.png") left no-repeat,
+        url("/planty/wp-content/uploads/2024/01/feuille-droite.png") center no-repeat;
+
+}
+
 .img-feuille-gauche, .img-feuille-droite {
     display: flex;
     flex-direction: row;
