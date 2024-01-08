@@ -4,13 +4,33 @@
     font-family: 'Syne', sans-serif;
 }
 
-h1 {
-    color: #3B8E46;
-    font-weight: 800;
-    font-size: 38px;
+p {
+    font-size: 20px;
     text-align: center;
     font-family: 'Syne', sans-serif;
+    }
+    
+h1 {
+color: #3B8E46;
+font-weight: 800;
+font-size: 38px;
+text-align: center;
+font-family: 'Syne', sans-serif;
+}
 
+h2 {
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Syne', sans-serif;
+    }
+
+h3 {
+    color: #3B8E46;
+    font-weight:bold;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Syne', sans-serif;
     }
 
 a {
@@ -97,12 +117,15 @@ body {
 
 
 /**MAIN**/
+
+/**PAGE D'ACCUEIL**/
+
 .canette-page-accueil {
     height: 620px;
     background-color: transparent;
     background: 
         url("/planty/wp-content/uploads/2024/01/cannette-planty.png") center no-repeat,
-        url("/planty/wp-content/uploads/2024/01/feuille-gauche.png") left no-repeat,
+        url("/planty/wp-content/uploads/2024/01/feuille-gauche.png") center no-repeat,
         url("/planty/wp-content/uploads/2024/01/feuille-droite.png") center no-repeat;
 
 }
@@ -113,6 +136,65 @@ body {
     align-items: center;
 }
 
+.titre-energie-des-plantes {
+    padding-top: 130px;
+    padding-bottom:  47px;
+    background-color: #FFFFFF;
+}
 
+.p-fond-blanc {
+    background-color: #FFFFFF;
+    padding-bottom: 82px;
+}
 
+.titre-les-gouts {
+    color: #D2776A;
+    padding-top: 48px;
+    padding-bottom: 7px;
+}
 
+.parfums {
+    color:#FFFFFF;
+    font-weight: 800;
+    font-size: 48px;
+    font-family: 'Syne', sans-serif;
+}
+
+.parfums-container {
+    height: 262px;
+    width: 816px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.img-parfums-fraise {
+    background: url("/planty/wp-content/uploads/2024/01/fraise.jpg");
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-parfums-pamplemousse {
+    background: url("/planty/wp-content/uploads/2024/01/pamplemousse.jpg");
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-parfums-framboise {
+    background: url("/planty/wp-content/uploads/2024/01/framboise.jpg");
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-parfums-citron {
+    background: url("/planty/wp-content/uploads/2024/01/citron.jpg");
+    height:100%;
+}
