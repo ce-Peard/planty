@@ -101,7 +101,7 @@ body {
 }
 
 .btn-command:hover {
-    background-color: #C02E44;
+    background-color: #C02E44
 }
 
 
@@ -136,16 +136,21 @@ body {
     align-items: center;
 }
 
+/**L'énergie des plantes**/
+
 .titre-energie-des-plantes {
     padding-top: 130px;
     padding-bottom:  47px;
     background-color: #FFFFFF;
-}
+    }
 
 .p-fond-blanc {
     background-color: #FFFFFF;
     padding-bottom: 82px;
 }
+
+
+                                    /**Les goûts**/
 
 .titre-les-gouts {
     color: #D2776A;
@@ -164,37 +169,111 @@ body {
     height: 262px;
     width: 816px;
     margin: auto;
+    margin-top: 48px;
     margin-bottom: 30px;
+}
+
+.img-parfums-fraise, .img-parfums-pamplemousse, .img-parfums-framboise, .img-parfums-citron {
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-parfums-fraise:hover {
+    opacity: 10%;
+    transition: 0.3s;
+}
+
+.img-parfums-pamplemousse:hover {
+    opacity: 10%;
+    transition: 0.3s;
+}
+
+.img-parfums-framboise:hover {
+    opacity: 10%;
+    transition: 0.3s;
+}
+
+.img-parfums-citron:hover {
+    opacity: 10%;
+    transition: 0.3s;
 }
 
 .img-parfums-fraise {
     background: url("/planty/wp-content/uploads/2024/01/fraise.jpg");
-    height:100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
 .img-parfums-pamplemousse {
     background: url("/planty/wp-content/uploads/2024/01/pamplemousse.jpg");
-    height:100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
 .img-parfums-framboise {
     background: url("/planty/wp-content/uploads/2024/01/framboise.jpg");
-    height:100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
 .img-parfums-citron {
     background: url("/planty/wp-content/uploads/2024/01/citron.jpg");
-    height:100%;
+}
+
+
+                                    /**CTA Commander***/
+
+.btn-cta-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 29px;
+}
+
+.btn-cta {
+    background-color: #DC9F96;
+    height: 55px;
+    max-width: 198px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:5px;
+}
+
+.btn-cta a {
+    color: #FFFFFF;
+}
+
+.btn-cta:hover {
+    background-color: #C02E44
+}
+
+
+                                    /**Ce qu'ils pensent***/
+
+.titre-cq-pensent {
+    color: #3B8E46;
+    padding-top: 48px;
+    padding-bottom: 84px;
+}
+
+.text-cq-pensent {
+    padding-top: 11px;
+}
+
+.container-cq-pensent {
+    width: 1175px;
+}
+
+.img-container-cq-pensent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 0;
+}
+
+.cq-pensent-largeur-colonne {
+    width: 345px;
+}
+
+.img-cq-pensent {
+    width: 126.28px;
+    height: 139px;
 }
