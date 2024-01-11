@@ -124,9 +124,10 @@ body {
     height: 620px;
     background-color: transparent;
     background: 
-        url("/planty/wp-content/uploads/2024/01/cannette-planty.png") center no-repeat,
-        url("/planty/wp-content/uploads/2024/01/feuille-gauche.png") center no-repeat,
-        url("/planty/wp-content/uploads/2024/01/feuille-droite.png") center no-repeat;
+        url("/planty/wp-content/uploads/2024/01/cannette-planty.png") center no-repeat ,
+        url("/planty/wp-content/uploads/2024/01/feuille-gauche.png") left 38% bottom 45% no-repeat,
+        url("/planty/wp-content/uploads/2024/01/feuille-droite.png") right 39% bottom 45% no-repeat;
+
 
 }
 
@@ -256,10 +257,11 @@ body {
 
 .text-cq-pensent {
     padding-top: 11px;
+    font-size: 16px;
 }
 
 .container-cq-pensent {
-    width: 1175px;
+    display: flex;
 }
 
 .img-container-cq-pensent {
