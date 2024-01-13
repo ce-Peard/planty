@@ -105,7 +105,22 @@ body {
 }
 
 
-/**HEADER TITLE**/
+
+/**MAIN**/
+
+/**PAGE D'ACCUEIL**/
+
+/**.canette-page-accueil {
+    height: 620px;
+    background-color: transparent;
+    background: 
+        url("/planty/wp-content/uploads/2024/01/cannette-planty.png") center no-repeat ,
+        url("/planty/wp-content/uploads/2024/01/feuille-gauche.png") left 38% bottom 45% no-repeat,
+        url("/planty/wp-content/uploads/2024/01/feuille-droite.png") right 39% bottom 45% no-repeat;
+}**/
+
+
+                                    /**TITLE**/
 
 .header {
     margin-top: 80px;
@@ -116,37 +131,40 @@ body {
      }
 
 
-/**MAIN**/
-
-/**PAGE D'ACCUEIL**/
-
-.canette-page-accueil {
-    height: 620px;
-    background-color: transparent;
-    background: 
-        url("/planty/wp-content/uploads/2024/01/cannette-planty.png") center no-repeat ,
-        url("/planty/wp-content/uploads/2024/01/feuille-gauche.png") left 38% bottom 45% no-repeat,
-        url("/planty/wp-content/uploads/2024/01/feuille-droite.png") right 39% bottom 45% no-repeat;
-
-
-}
-
-.img-feuille-gauche, .img-feuille-droite {
+.img-feuille-gauche {
     display: flex;
     flex-direction: row;
     align-items: center;
+    z-index: 0;
+    position: relative;
+    left: 220px;
 }
 
-/**L'énergie des plantes**/
+.img-feuille-droite {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 0;
+    position: relative;
+    right: 220px;
+}
+
+.image-cannette {
+    z-index: 1;
+}
+
+                                    /**L'énergie des plantes**/
+
+.energie-des-plantes-container {
+    background: url("/planty/wp-content/uploads/2024/01/curved-background1.png");
+}
 
 .titre-energie-des-plantes {
     padding-top: 130px;
     padding-bottom:  47px;
-    background-color: #FFFFFF;
     }
 
 .p-fond-blanc {
-    background-color: #FFFFFF;
     padding-bottom: 82px;
 }
 
@@ -160,62 +178,21 @@ body {
 }
 
 .parfums {
-    color:#FFFFFF;
     font-weight: 800;
     font-size: 48px;
     font-family: 'Syne', sans-serif;
 }
 
 .parfums-container {
-    height: 262px;
     width: 816px;
     margin: auto;
     margin-top: 48px;
     margin-bottom: 30px;
 }
 
-.img-parfums-fraise, .img-parfums-pamplemousse, .img-parfums-framboise, .img-parfums-citron {
-    height:100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.img-parfums-fraise:hover {
+.img-parfums-fraise:hover, .img-parfums-pamplemousse:hover, .img-parfums-framboise:hover, .img-parfums-citron:hover {
     opacity: 10%;
     transition: 0.3s;
-}
-
-.img-parfums-pamplemousse:hover {
-    opacity: 10%;
-    transition: 0.3s;
-}
-
-.img-parfums-framboise:hover {
-    opacity: 10%;
-    transition: 0.3s;
-}
-
-.img-parfums-citron:hover {
-    opacity: 10%;
-    transition: 0.3s;
-}
-
-.img-parfums-fraise {
-    background: url("/planty/wp-content/uploads/2024/01/fraise.jpg");
-}
-
-.img-parfums-pamplemousse {
-    background: url("/planty/wp-content/uploads/2024/01/pamplemousse.jpg");
-}
-
-.img-parfums-framboise {
-    background: url("/planty/wp-content/uploads/2024/01/framboise.jpg");
-}
-
-.img-parfums-citron {
-    background: url("/planty/wp-content/uploads/2024/01/citron.jpg");
 }
 
 
@@ -249,9 +226,13 @@ body {
 
                                     /**Ce qu'ils pensent***/
 
+.curved-background2 {
+    background: url("/planty/wp-content/uploads/2024/01/curved-background2.png");
+}
+
 .titre-cq-pensent {
     color: #3B8E46;
-    padding-top: 48px;
+    padding-top: 133px;
     padding-bottom: 84px;
 }
 
@@ -262,6 +243,7 @@ body {
 
 .container-cq-pensent {
     display: flex;
+    background-color: white;
 }
 
 .img-container-cq-pensent {
@@ -278,4 +260,27 @@ body {
 .img-cq-pensent {
     width: 126.28px;
     height: 139px;
+}
+
+.barre-cannettes {
+    background-color: #FFFFFF;
+    padding-top: 50px;
+}
+
+
+/**PAGE NOUS CONTACTER**/
+
+                                        /**Titre**/
+
+.nous-contacter {
+    
+}
+
+/**FOOTER**/
+
+.footer {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }

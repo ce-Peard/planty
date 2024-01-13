@@ -1,7 +1,7 @@
 </main>
 </div>
-<footer id="footer" role="contentinfo">
-    <div id="copyright">
+<footer>
+    <div class="footer">
         <a href="/planty/mentions-legales/">Mentions légales</a>
     </div>
 </footer>
