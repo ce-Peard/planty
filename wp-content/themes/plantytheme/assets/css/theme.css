@@ -33,6 +33,13 @@ h3 {
     font-family: 'Syne', sans-serif;
     }
 
+h4 {
+    font-weight:bold;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Syne', sans-serif;
+    }
+
 a {
     color: #000000;
     font-size: 16px;
@@ -122,14 +129,13 @@ body {
 
                                     /**TITLE**/
 
+.post-15 .entry-title { 
+    text-transform : uppercase;
+}
+
 .header {
     margin-top: 80px;
 }
-
-.h1-header {
-    font-weight: 800;
-     }
-
 
 .img-feuille-gauche {
     display: flex;
@@ -268,12 +274,32 @@ body {
 }
 
 
-/**PAGE NOUS CONTACTER**/
+/**PAGE NOUS RENCONTRER**/
 
                                         /**Titre**/
 
-.nous-contacter {
-    
+.post-17 .entry-title { 
+    color:#D2776A;
+    text-transform : uppercase;
+    padding-top: 186px;
+    padding-bottom: 27px;
+}
+
+                                        /**L'équipe**/
+
+.l-equipe-container {
+    background: url("/planty/wp-content/uploads/2024/01/curved-background3.png");
+}
+
+.l-equipe-titre {
+    padding-top: 139px;
+    padding-bottom: 52px; 
+}
+
+.l-equipe-prenoms {
+    padding-top: 20px;
+    padding-bottom: 11px;
+
 }
 
 /**FOOTER**/
