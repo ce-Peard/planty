@@ -162,7 +162,9 @@ body {
                                     /**L'énergie des plantes**/
 
 .energie-des-plantes-container {
-    background: url("/planty/wp-content/uploads/2024/01/curved-background1.png");
+    height: 415px;
+    background-color: transparent;
+    background: url("/planty/wp-content/uploads/2024/01/curved-background1.png") center no-repeat;
 }
 
 .titre-energie-des-plantes {
@@ -233,7 +235,9 @@ body {
                                     /**Ce qu'ils pensent***/
 
 .curved-background2 {
-    background: url("/planty/wp-content/uploads/2024/01/curved-background2.png");
+    height: 638px;
+    background-color: transparent;
+    background: url("/planty/wp-content/uploads/2024/01/curved-background2.png") center no-repeat;
 }
 
 .titre-cq-pensent {
@@ -248,6 +252,7 @@ body {
 }
 
 .container-cq-pensent {
+    width: 1440px;
     display: flex;
     background-color: white;
 }
@@ -269,7 +274,6 @@ body {
 }
 
 .barre-cannettes {
-    background-color: #FFFFFF;
     padding-top: 50px;
 }
 
@@ -289,6 +293,8 @@ body {
 
 .l-equipe-container {
     background: url("/planty/wp-content/uploads/2024/01/curved-background3.png");
+    padding-bottom: 81px;
+    margin-bottom: 66px;
 }
 
 .l-equipe-titre {
@@ -300,6 +306,32 @@ body {
     padding-top: 20px;
     padding-bottom: 11px;
 
+}
+
+                                        /**Formulaire de contact**/
+
+.fluentform.ff-default.fluentform_wrapper_1.ffs_default_wrap {
+    padding-top: 46px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+                                        /**Bouton d'envoi**/
+
+.ff-btn.ff-btn-submit.ff-btn-lg.ff_btn_style {
+    background-color: #DC9F96;
+    height: 55px;
+    width: 198px;
+
+}
+.ff-btn.ff-btn-submit.ff-btn-lg.ff_btn_style:hover {
+    background-color: #C02E44
+}
+
+.btn-formulaire-contact {
+    padding-top: 24px;
+    padding-bottom: 42px;
 }
 
 /**FOOTER**/
