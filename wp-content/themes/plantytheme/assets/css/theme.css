@@ -26,7 +26,6 @@ h2 {
     }
 
 h3 {
-    color: #3B8E46;
     font-weight:bold;
     font-size: 30px;
     text-align: center;
@@ -188,6 +187,7 @@ footer {
 }
 
 .titre-energie-des-plantes {
+    color: #3B8E46;
     padding-top: 130px;
     padding-bottom:  47px;
     }
@@ -376,10 +376,52 @@ footer {
     padding-top: 40px;
 }
 
+                                        /**Formulaire de commandes**/
+
 .parfums-commander-container {
     width: 860px;
     margin-top: 39px;
     margin-bottom: 15px;
+}
+
+.formulaire-commande {
+    width: 711px; 
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ff-default .ff-el-form-control {
+font-size: 16px;
+padding: 0%;
+text-align: center;
+font-family: 'Syne', sans-serif;
+border-radius: 0%;
+}
+
+.quantite-container {
+    width:39px;
+    height: 56px !important;
+}
+
+
+.quantite-element {
+padding: 0%;
+font-size: 16px;
+display: flex;
+text-align: center;
+font-family: 'Syne', sans-serif;
+}
+
+.frm-fluent-form .ff-t-cell {
+
+}
+
+.vos-informations {
+    width: 383px;
+    font-family: 'Syne', sans-serif;
+    font-size: 20px;
 }
 
 /**FOOTER**/
