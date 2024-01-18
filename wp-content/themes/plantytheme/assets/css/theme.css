@@ -154,7 +154,7 @@ footer {
 }
 
 .header {
-    margin-top: 80px;
+    padding-top: 80px;
 }
 
 .img-feuille-gauche {
@@ -183,12 +183,15 @@ footer {
 
 .energie-des-plantes-container {
     height: 415px;
-    background: url("/planty/wp-content/uploads/2024/01/curved-background1.png") center no-repeat;
+    background-image: url("/planty/wp-content/uploads/2024/01/curved-background1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .titre-energie-des-plantes {
     color: #3B8E46;
     padding-top: 130px;
+
     padding-bottom:  47px;
     }
 
@@ -255,7 +258,9 @@ footer {
                                     /**Ce qu'ils pensent***/
 
 .curved-background2 {
-    background: url("/planty/wp-content/uploads/2024/01/curved-background2.png") center no-repeat;
+    background-image: url("/planty/wp-content/uploads/2024/01/curved-background2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .titre-cq-pensent {
@@ -270,7 +275,8 @@ footer {
 }
 
 .container-cq-pensent {
-    width: 1440px;
+
+    width: 1171px;
     display: flex;
     background-color: white;
 }
@@ -291,8 +297,10 @@ footer {
     height: 139px;
 }
 
-.barre-cannettes {
+.barre-cannettes img {
     padding-top: 50px;
+    width: 100%;
+    background-color: white;
 }
 
 
@@ -307,10 +315,28 @@ footer {
     padding-bottom: 27px;
 }
 
+.paragraphe-nous-rencontrer {
+    height: 72px;
+}
+
+.img-fleur1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 0;
+    position: relative;
+    left: 180px;
+    bottom: 140px;
+}
+
+
                                         /**L'équipe**/
 
 .l-equipe-container {
-    background: url("/planty/wp-content/uploads/2024/01/curved-background3.png") center no-repeat;
+    background-image: url("/planty/wp-content/uploads/2024/01/curved-background3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
     padding-bottom: 81px;
     margin-bottom: 66px;
 }
@@ -352,6 +378,11 @@ footer {
     padding-bottom: 42px;
 }
 
+.barre-cannettes2 .wp-image-350 { /**cannettes bas de page**/
+    width: 100%;
+}
+
+
 /**Page COMMANDER**/
 
                                         /**Titre H1**/
@@ -384,44 +415,51 @@ footer {
     margin-bottom: 15px;
 }
 
-.formulaire-commande {
-    width: 711px; 
-  
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.ff-default .ff-el-form-control { /**police boutton quantité**/
+    font-size: 16px;
+    text-align: center;
+    padding-right: 0%;
+    padding-left: 0%;
+    font-family: 'Syne', sans-serif;
 }
 
-.ff-default .ff-el-form-control {
-font-size: 16px;
-padding: 0%;
-text-align: center;
-font-family: 'Syne', sans-serif;
-border-radius: 0%;
+.formulaire-info-livraisons .ff-el-input--content .ff-el-form-control {
+    height: 70px;
 }
 
-.quantite-container {
+.quantite-container .ff-el-input--content {
+    text-align: -webkit-center;
+}
+
+.quantite-container .ff-el-input--content input {
     width:39px;
     height: 56px !important;
+    border-radius: 0%;
 }
-
 
 .quantite-element {
-padding: 0%;
-font-size: 16px;
-display: flex;
-text-align: center;
-font-family: 'Syne', sans-serif;
+    padding: 0%;
+    font-size: 16px;
+    display: flex;
+    text-align: center;
+    font-family: 'Syne', sans-serif;
 }
 
-.frm-fluent-form .ff-t-cell {
-
-}
-
-.vos-informations {
+.vos-informations, .livraison {
     width: 383px;
+    height: 108px;
     font-family: 'Syne', sans-serif;
     font-size: 20px;
+}
+
+.ff-t-cell .ff-t-column-1, .ff-t-cell .ff-t-column-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ff-t-container .ff-column-container .ff_columns_total_3 {
+    padding-top: 22px;
 }
 
 /**FOOTER**/
