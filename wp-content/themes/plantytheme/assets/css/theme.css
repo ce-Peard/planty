@@ -151,10 +151,7 @@ footer {
 
 .post-15 .entry-title { 
     text-transform : uppercase;
-}
-
-.header {
-    padding-top: 80px;
+    padding-top: 100px;
 }
 
 .img-feuille-gauche {
@@ -325,8 +322,8 @@ footer {
     align-items: center;
     z-index: 0;
     position: relative;
-    left: 180px;
-    bottom: 140px;
+    left: 200px;
+    bottom: 120px;
 }
 
 
@@ -423,10 +420,6 @@ footer {
     font-family: 'Syne', sans-serif;
 }
 
-.formulaire-info-livraisons .ff-el-input--content .ff-el-form-control {
-    height: 70px;
-}
-
 .quantite-container .ff-el-input--content {
     text-align: -webkit-center;
 }
@@ -460,6 +453,27 @@ footer {
 
 .ff-t-container .ff-column-container .ff_columns_total_3 {
     padding-top: 22px;
+}
+
+.formulaire-info-livraisons {
+    padding-top: 33px;
+}
+
+.formulaire-info-livraisons .ff-el-input--content .ff-el-form-control {
+    height: 71px;
+}
+
+.formulaire-info-livraisons .ff-t-cell.ff-t-column-1 {
+    gap: 25px;
+}
+
+.formulaire-info-livraisons .ff-t-cell.ff-t-column-3 {
+    gap: 25px;
+}
+
+.btn-commander {
+    padding-top: 24px;
+    padding-bottom: 93px;
 }
 
 /**FOOTER**/
