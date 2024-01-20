@@ -326,16 +326,30 @@ footer {
     bottom: 120px;
 }
 
+.img-fleur2 {
+    z-index: 1;
+    position: relative;
+    bottom: -122px;
+}
 
+.img-equipe {
+    position: relative;
+    z-index: 0;
+
+}
                                         /**L'équipe**/
 
 .l-equipe-container {
     background-image: url("/planty/wp-content/uploads/2024/01/curved-background3.png");
     background-size: cover;
     background-repeat: no-repeat;
-
+    z-index: 0;
     padding-bottom: 81px;
     margin-bottom: 66px;
+}
+
+.group-img-equipe {
+    padding-left: 300px;
 }
 
 .l-equipe-titre {
