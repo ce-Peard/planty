@@ -181,7 +181,7 @@ footer {
 .energie-des-plantes-container {
     height: 415px;
     background-image: url("/planty/wp-content/uploads/2024/01/curved-background1.png");
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
@@ -212,7 +212,7 @@ footer {
 }
 
 .parfums-container {
-    width: 816px;
+    max-width: 816px;
     margin: auto;
     margin-top: 48px;
     margin-bottom: 30px;
@@ -256,7 +256,7 @@ footer {
 
 .curved-background2 {
     background-image: url("/planty/wp-content/uploads/2024/01/curved-background2.png");
-    background-size: cover;
+    background-size:100%;
     background-repeat: no-repeat;
 }
 
@@ -273,7 +273,7 @@ footer {
 
 .container-cq-pensent {
 
-    width: 1171px;
+    max-width: 1171px;
     display: flex;
     background-color: white;
 }
@@ -286,7 +286,7 @@ footer {
 }
 
 .cq-pensent-largeur-colonne {
-    width: 345px;
+    width: 25%px;
 }
 
 .img-cq-pensent {
@@ -341,7 +341,7 @@ footer {
 
 .l-equipe-container {
     background-image: url("/planty/wp-content/uploads/2024/01/curved-background3.png");
-    background-size: cover;
+    background-size:100%;
     background-repeat: no-repeat;
     z-index: 0;
     padding-bottom: 81px;
@@ -473,7 +473,9 @@ footer {
     padding-top: 33px;
 }
 
-.formulaire-info-livraisons .ff-el-input--content .ff-el-form-control {
+.formulaire-info-livraisons
+.ff-el-input--content
+.ff-el-form-control {
     height: 71px;
 }
 
@@ -498,4 +500,52 @@ footer {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 30px;
+}
+
+
+/* =Media Queries
+-------------------------------------------------------------- */
+
+/**Mobile**/
+@media screen and (max-width: 600px) {
+
+    .parfums-container {
+        width: 100%;
+        margin: auto;
+        margin-top: 48px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-parfums-fraise,
+    .img-parfums-pamplemousse,
+    .img-parfums-framboise,
+    .img-parfums-citron {
+        width: 100%;
+    }
+
+}
+
+/**Tablette**/
+@media screen and (min-width: 601px) and (max-width: 1280px) {
+
+    .parfums-container {
+        width: 100%;
+        margin: auto;
+        margin-top: 48px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-parfums-fraise,
+    .img-parfums-pamplemousse,
+    .img-parfums-framboise,
+    .img-parfums-citron {
+        width: 100%;
+    }
+
 }

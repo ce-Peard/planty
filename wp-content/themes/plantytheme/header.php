@@ -22,5 +22,6 @@
             'theme_location' => 'main-menu',
             ])
             ?>
+            <a href="#">&#9776;</a>
         </nav>
     </header>
