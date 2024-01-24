@@ -11,11 +11,12 @@ p {
     }
     
 h1 {
-color: #3B8E46;
-font-weight: 800;
-font-size: 38px;
-text-align: center;
-font-family: 'Syne', sans-serif;
+    color: #3B8E46;
+    font-weight: 800;
+    font-size: 38px;
+    text-align: center;
+    font-family: 'Syne', sans-serif;
+    width: auto;
 }
 
 h2 {
@@ -60,6 +61,10 @@ a:hover {
     font-weight: bold;
 }
 
+body {
+    width: auto;
+}
+
 body .post-15 {
     background-color: #ECE2DA;
 }
@@ -84,13 +89,13 @@ footer {
     width: 100%;
 }
 
-.navbar,.menu {
+.nav,.menu {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.navbar {
+.nav {
     background-color: #FFFFFF;
     width:auto;
     height: 80px;
@@ -131,6 +136,10 @@ footer {
     background-color: #C02E44
 }
 
+
+.nav .nav-hamburger {/**menu hamburger**/
+    display:none;
+}
 
 
 /**MAIN**/
@@ -349,7 +358,7 @@ footer {
 }
 
 .group-img-equipe {
-    padding-left: 300px;
+    padding-left: 220px;
 }
 
 .l-equipe-titre {
@@ -416,12 +425,17 @@ footer {
 
 .titre-votre-commande {
     padding-top: 40px;
+    margin: auto;
+}
+
+.is-style-wide {
+    width: auto;
 }
 
                                         /**Formulaire de commandes**/
 
 .parfums-commander-container {
-    width: 860px;
+    max-width: 860px;
     margin-top: 39px;
     margin-bottom: 15px;
 }
@@ -439,7 +453,7 @@ footer {
 }
 
 .quantite-container .ff-el-input--content input {
-    width:39px;
+    max-width:39px;
     height: 56px !important;
     border-radius: 0%;
 }
@@ -453,7 +467,7 @@ footer {
 }
 
 .vos-informations, .livraison {
-    width: 383px;
+    max-width: 383px;
     height: 108px;
     font-family: 'Syne', sans-serif;
     font-size: 20px;
@@ -495,7 +509,7 @@ footer {
 /**FOOTER**/
 
 .footer {
-    width: 1440px;
+    width: 100%;
     background-color: #FFFFFF;
     text-align: center;
     padding-top: 20px;
@@ -507,15 +521,35 @@ footer {
 -------------------------------------------------------------- */
 
 /**Mobile**/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 677px) {
 
+/**Page Nous rencontrer**/
+    .group-img-equipe {
+        padding-left: 0px;
+    }
+
+     .post-17 .entry-title {
+        font-size: 22px;
+     }
+
+     .img-fleur1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        z-index: 0;
+        position: relative;
+        left: 200px;
+        bottom: 220px;
+    }
+
+/**Page Commander**/
     .parfums-container {
         width: 100%;
         margin: auto;
         margin-top: 48px;
         margin-bottom: 30px;
         display: flex;
-        flex-direction: column;
+        flex-direction: column;677
         align-items: center;
     }
 
@@ -526,10 +560,48 @@ footer {
         width: 100%;
     }
 
+    .nav .menu-principal-container {
+        display: none;
+    }
+
+    .nav .nav-hamburger {/**menu hamburger**/
+        display:block;
+    }
+
+    .logo-header{
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    article {
+        width: 100%;
+    }
+
 }
 
 /**Tablette**/
-@media screen and (min-width: 601px) and (max-width: 1280px) {
+@media screen and (min-width: 678px) and (max-width: 1280px) {
+
+/**Page Nous rencontrer**/
+
+    .img-fleur1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        z-index: 0;
+        position: relative;
+        left: 200px;
+        bottom: 220px;
+    }
+
+    .wp-block-column.img-fleur1.is-layout-flow.wp-block-column-is-layout-flow {
+        flex-basis: auto;
+    }
+    
+/**Page Commander**/
 
     .parfums-container {
         width: 100%;

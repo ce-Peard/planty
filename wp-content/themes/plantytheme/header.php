@@ -13,15 +13,26 @@
 
 <body>
     <header>
-        <nav class="navbar">
+        <nav id="navbar" class="nav">
             <a href="<?= home_url() ?>">
                 <img class="logo-header" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/Group-1.jpg" alt="Logo Planty"                >
             </a>
-            <?php
-            wp_nav_menu([
-            'theme_location' => 'main-menu',
-            ])
-            ?>
-            <a href="#">&#9776;</a>
+                <?php
+                wp_nav_menu([
+                'theme_location' => 'main-menu',
+                ])
+                ?>
+            <a class="nav-hamburger" onclick="myFunction()">&#9776;</a>
         </nav>
     </header>
+
+    <script>
+            function myFunction() {
+                var x = document.getElementById("navbar");
+                if (x.className === "nav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "nav";
+                }
+            }
+    </script>
