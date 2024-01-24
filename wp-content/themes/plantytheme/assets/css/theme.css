@@ -139,6 +139,9 @@ footer {
 
 .nav .nav-hamburger {/**menu hamburger**/
     display:none;
+    position: absolute;
+    right: 5%;
+    font-size: xx-large;
 }
 
 
@@ -523,6 +526,42 @@ footer {
 /**Mobile**/
 @media screen and (max-width: 677px) {
 
+    .nav .menu-principal-container {
+        display: none;
+     }
+
+    .nav .nav-hamburger {/**menu hamburger**/
+        display:block;
+        z-index: 1;
+    }
+
+    nav.responsive .menu-principal-container {
+        display:block;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: row;
+        height: 100%;
+    }
+   
+    .logo-header{
+        width: 156px;
+        z-index: 0;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    article {
+        width: 100%;
+    }
+
+
 /**Page Nous rencontrer**/
     .group-img-equipe {
         padding-left: 0px;
@@ -560,25 +599,7 @@ footer {
         width: 100%;
     }
 
-    .nav .menu-principal-container {
-        display: none;
-    }
 
-    .nav .nav-hamburger {/**menu hamburger**/
-        display:block;
-    }
-
-    .logo-header{
-        width: 100%;
-    }
-
-    header {
-        width: 100%;
-    }
-
-    article {
-        width: 100%;
-    }
 
 }
 
