@@ -15,7 +15,8 @@
     <header>
         <nav id="navbar" class="nav">
             <a href="<?= home_url() ?>">
-                <img class="logo-header" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/Group-1.jpg" alt="Logo Planty"                >
+                <img class="logo-header" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/Group-1.jpg" alt="Logo Planty"
+                >
             </a>
                 <?php
                 wp_nav_menu([

@@ -10,3 +10,16 @@ function theme_enqueue_styles()
 }
 
 
+function wp_nav_menu_admin($admin) {
+    if (is_user_logged_in()) {
+        return '<li class="menu-contact menu-item"><a href=" ' . get_admin_url() . ' ">Admin</a></li>' . $admin;
+    }
+
+    return $admin;
+}
+
+
+add_filter('wp_nav_menu_items', 'wp_nav_menu_admin');
+
+
+
