@@ -103,6 +103,7 @@ footer {
 
 .menu-principal-container {
     margin-left: auto;
+    background-color: #FFFFFF;
 }
 
 .logo-header {
@@ -526,6 +527,10 @@ footer {
 /**Mobile**/
 @media screen and (max-width: 677px) {
 
+    .nav {
+        justify-content: flex-start;
+    }
+
     .nav .menu-principal-container {
         display: none;
      }
@@ -539,6 +544,9 @@ footer {
         display:block;
         z-index: 1;
         width: 100%;
+        height: 100%;
+        position: relative;
+        top: 80px;
     }
 
     .menu {
@@ -548,6 +556,17 @@ footer {
         height: 100%;
     }
    
+    .menu-contact {
+        height: 200px;
+
+    }
+
+    .btn-command {
+        height: 200px;
+
+    }
+
+
     .logo-header{
         width: 156px;
         z-index: 0;
