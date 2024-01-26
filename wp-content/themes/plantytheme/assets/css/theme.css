@@ -388,6 +388,8 @@ footer {
     max-width: 147px;
     position: absolute;
     z-index: -1;
+    left: 32%;
+    top: 61%;
 }
 
 .contact-form-and-fleur3 {
@@ -547,6 +549,11 @@ footer {
 /**Mobile**/
 @media screen and (max-width: 677px) {
 
+    h1 {
+        font-size: 24px;
+    }
+
+                        /**Header**/
     .nav {
         justify-content: flex-start;
     }
@@ -599,6 +606,46 @@ footer {
         width: 100%;
     }
 
+/**Page d'accueil**/
+
+    .img-feuille-gauche, .img-feuille-droite {
+        display: none;
+    }
+
+    .curved-background2 {
+        background-image: none;
+    }
+
+    .titre-energie-des-plantes {
+            background-color: white;
+            padding-top: 80px;
+    }
+
+    .titre-les-gouts {
+        margin-top: 50px;
+    }
+
+    .titre-cq-pensent {
+        color: #3B8E46;
+        padding-top: 60px;
+        padding-bottom: 50px;
+        background-color: #FFFFFF;
+        font-size: 25px;
+       }
+
+    :where(.is-layout-flex) .wp-container-core-group-layout-4.wp-container-core-group-layout-4 {
+        gap: 0%;
+    }
+
+    .img-container-cq-pensent {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .has-text-align-left {
+        text-align: center;
+    }
 
 /**Page Nous rencontrer**/
     .group-img-equipe {
@@ -619,6 +666,7 @@ footer {
         bottom: 220px;
     }
 
+
 /**Page Commander**/
     .parfums-container {
         width: 100%;
@@ -636,11 +684,31 @@ footer {
     .img-parfums-citron {
         width: 100%;
     }
+    
+    .barre-verticale-commandes {
+        display: none;
+    }
 
 }
 
 /**Tablette**/
 @media screen and (min-width: 678px) and (max-width: 1280px) {
+
+/**Page d'accueil**/
+
+.img-feuille-gauche, .img-feuille-droite {
+    display: none;
+}
+
+.img-container-cq-pensent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.has-text-align-left {
+    text-align: center;
+}
 
 /**Page Nous rencontrer**/
 
