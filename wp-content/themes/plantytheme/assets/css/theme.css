@@ -445,28 +445,28 @@ footer {
     margin-bottom: 15px;
 }
 
-.ff-default .ff-el-form-control { /**police boutton quantité**/
-    font-size: 16px;
-    text-align: center;
-    padding-right: 0%;
-    padding-left: 0%;
-    font-family: 'Syne', sans-serif;
-}
-
-.quantite-container .ff-el-input--content {
+.quantite-container .ff-el-input--content { /**boutton quantité**/
     text-align: -webkit-center;
 }
 
-.quantite-container .ff-el-input--content input {
+.quantite-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.quantite-container input  {
     max-width:39px;
     height: 56px !important;
     border-radius: 0%;
 }
 
-.quantite-element {
+.quantite-element input { /**boutton quantité**/
+    margin-top: 16px;
+    margin-bottom: 39px;
+    border: 0;
     padding: 0%;
     font-size: 16px;
-    display: flex;
     text-align: center;
     font-family: 'Syne', sans-serif;
 }
