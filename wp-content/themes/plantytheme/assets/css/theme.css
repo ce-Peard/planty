@@ -298,11 +298,6 @@ footer {
     align-items: flex-end;
     padding-right: 0;
 }
-
-.cq-pensent-largeur-colonne {
-    width: 25%px;
-}
-
 .img-cq-pensent {
     width: 126.28px;
     height: 139px;
@@ -334,22 +329,32 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    z-index: 0;
-    position: relative;
+    z-index: 1;
+    position: absolute;
     left: 200px;
-    bottom: 120px;
+    bottom: 232px;
 }
 
-.img-fleur2 {
-    z-index: 1;
+.p-chez-planty-container {
+    width: 100%;
     position: relative;
-    bottom: -122px;
+    z-index: 0;
+}
+
+.p-chez-planty-txt {
+    max-width: 669px;
 }
 
 .img-equipe {
     position: relative;
     z-index: 0;
+}
 
+.img-fleur2 {
+    z-index: 1;
+    position: absolute;
+    bottom: -387px;
+    right: 100px;
 }
                                         /**L'équipe**/
 
@@ -363,7 +368,8 @@ footer {
 }
 
 .group-img-equipe {
-    padding-left: 220px;
+    padding-left: 0;
+    width: 815px;
 }
 
 .l-equipe-titre {
@@ -578,7 +584,6 @@ footer {
     .menu {
         display: flex;
         flex-direction: column;
-        align-items: row;
         height: 100%;
     }
    
@@ -606,8 +611,12 @@ footer {
         width: 100%;
     }
 
-/**Page d'accueil**/
+/**Page d'accueil (Mobile)**/
 
+    .post-17 .entry-title {
+        padding-top: 50px;
+        padding-bottom: 27px;
+}
     .img-feuille-gauche, .img-feuille-droite {
         display: none;
     }
@@ -633,6 +642,10 @@ footer {
         font-size: 25px;
        }
 
+    .gap-suppression {
+        gap: 0;
+    }
+
     :where(.is-layout-flex) .wp-container-core-group-layout-4.wp-container-core-group-layout-4 {
         gap: 0%;
     }
@@ -647,31 +660,67 @@ footer {
         text-align: center;
     }
 
-/**Page Nous rencontrer**/
-    .group-img-equipe {
+
+
+/**Page Nous rencontrer (Mobile)**/
+    h1 {
+        position: relative;
+        z-index: 0;
+    }
+
+.group-img-equipe {
         padding-left: 0px;
     }
 
      .post-17 .entry-title {
-        font-size: 22px;
+        font-size: 21px;
      }
 
      .img-fleur1 {
         display: flex;
         flex-direction: row;
         align-items: center;
-        z-index: 0;
-        position: relative;
-        left: 200px;
-        bottom: 220px;
+        z-index: -1;
+        position: absolute;
+        left: 50px;
     }
 
+    .wp-block-group.l-equipe-container.is-vertical.is-content-justification-center.is-layout-flex.wp-container-core-group-layout-1.wp-block-group-is-layout-flex {
+        gap: 0;
+    }
 
-/**Page Commander**/
+    .paragraphe-nous-rencontrer {
+        padding-bottom: 145px;
+    }
+
+    .l-equipe-titre {
+        padding-top: 80px;
+        padding-bottom: 0;
+    }
+
+    figure.wp-block-image.size-full.is-resized {/**Fleur**/
+        width: 130px;
+    }
+
+    .img-fleur2 {
+        bottom: -245px;
+        right: -22px;
+    }
+
+    .group-img-equipe {
+        padding-top: 30px;
+    }
+    
+    .wp-block-column.is-layout-flow.wp-block-column-is-layout-flow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+/**Page Commander (Mobile)**/
     .parfums-container {
         width: 100%;
         margin: auto;
-        margin-top: 48px;
         margin-bottom: 30px;
         display: flex;
         flex-direction: column;
@@ -694,7 +743,7 @@ footer {
 /**Tablette**/
 @media screen and (min-width: 678px) and (max-width: 1280px) {
 
-/**Page d'accueil**/
+/**Page d'accueil (Tablette)**/
 
 .img-feuille-gauche, .img-feuille-droite {
     display: none;
@@ -710,7 +759,11 @@ footer {
     text-align: center;
 }
 
-/**Page Nous rencontrer**/
+.gap-suppression {
+    gap: 0;
+}
+
+/**Page Nous rencontrer (Tablette)**/
 
     .img-fleur1 {
         display: flex;
@@ -726,7 +779,7 @@ footer {
         flex-basis: auto;
     }
     
-/**Page Commander**/
+/**Page Commander (Tablette)**/
 
     .parfums-container {
         width: 100%;
