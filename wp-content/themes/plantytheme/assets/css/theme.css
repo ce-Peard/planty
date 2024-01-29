@@ -330,14 +330,14 @@ footer {
     flex-direction: row;
     align-items: center;
     z-index: 1;
-    position: absolute;
+    position: relative;
     left: 200px;
     bottom: 232px;
 }
 
 .p-chez-planty-container {
     width: 100%;
-    position: relative;
+    position: absolute;
     z-index: 0;
 }
 
@@ -353,8 +353,8 @@ footer {
 .img-fleur2 {
     z-index: 1;
     position: absolute;
-    bottom: -387px;
-    right: 100px;
+    top: 812px;
+    right: 40px;
 }
                                         /**L'équipe**/
 
@@ -617,7 +617,7 @@ footer {
         padding-top: 50px;
         padding-bottom: 27px;
 }
-    .img-feuille-gauche, .img-feuille-droite {
+    .img-feuille-gauche img, .img-feuille-droite img {
         display: none;
     }
 
@@ -630,8 +630,17 @@ footer {
             padding-top: 80px;
     }
 
+    .energie-des-plantes-container {
+        padding-bottom: 60px;
+        background-color: white;
+    }
+
+    .p-les-gouts {
+        padding-bottom: 40px;
+    }
+
     .titre-les-gouts {
-        margin-top: 50px;
+        margin-top: 20px;
     }
 
     .titre-cq-pensent {
@@ -654,6 +663,10 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: center;
+    }
+
+    .container-cq-pensent {
+        gap: 50px;
     }
 
     .has-text-align-left {
@@ -702,9 +715,8 @@ footer {
         width: 130px;
     }
 
-    .img-fleur2 {
-        bottom: -245px;
-        right: -22px;
+    .fleur2 {
+        display: none;
     }
 
     .group-img-equipe {
@@ -741,7 +753,7 @@ footer {
 }
 
 /**Tablette**/
-@media screen and (min-width: 678px) and (max-width: 1280px) {
+@media screen and (min-width: 678px) and (max-width: 1024px) {
 
 /**Page d'accueil (Tablette)**/
 
@@ -765,19 +777,14 @@ footer {
 
 /**Page Nous rencontrer (Tablette)**/
 
-    .img-fleur1 {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        z-index: 0;
-        position: relative;
-        left: 200px;
-        bottom: 220px;
-    }
+.group-image-equipe img.wp-image-76 {
+    display: none;
+}
 
-    .wp-block-column.img-fleur1.is-layout-flow.wp-block-column-is-layout-flow {
-        flex-basis: auto;
-    }
+.fleur2 {
+    display: none;
+}
+
     
 /**Page Commander (Tablette)**/
 

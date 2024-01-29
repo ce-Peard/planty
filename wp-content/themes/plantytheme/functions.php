@@ -18,8 +18,23 @@ function wp_nav_menu_admin($admin) {
     return $admin;
 }
 
-
 add_filter('wp_nav_menu_items', 'wp_nav_menu_admin');
 
 
+/*
+add_filter('wp_nav_menu_items', function ($admin) {
+    if (is_user_logged_in()) {
+        $admin = '<li class="menu-contact menu-item"><a href=" ' . get_admin_url() . '">Admin</a></li>';
+    }
+    return $admin;
+});
+*/
+
+
+/*
+$admin_item ='<li class="menu-item"><a class="menu-link" href="' . esc_url(admin_url()) . '">Admin</a></li>';
+$position_first_item_li = strpos($admin, '</li>'); 
+$admin = substr_replace($admin, $admin_item, $position_first_item_li, 0);
+return $admin;
+*/
 
