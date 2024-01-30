@@ -202,11 +202,10 @@ footer {
 .titre-energie-des-plantes {
     color: #3B8E46;
     padding-top: 130px;
-
-    padding-bottom:  47px;
     }
 
 .p-fond-blanc {
+    padding-top:  47px;
     padding-bottom: 82px;
 }
 
@@ -391,7 +390,7 @@ footer {
 
 
 .formulaire-contact {
-    max-width: 483px;
+    max-width: 383px;
 }
 
 .fleur3 {
@@ -469,6 +468,10 @@ footer {
 }
 
                                         /**Formulaire de commandes**/
+
+.frm-fluent-form .ff-t-container {
+    gap: 0px;
+}
 
 .parfums-commander-container {
     max-width: 860px;
@@ -559,11 +562,17 @@ footer {
 /**Mobile**/
 @media screen and (max-width: 677px) {
 
+    .post-19 .entry-content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     h1 {
         font-size: 24px;
     }
 
-                        /**Header**/
+    /**Header**/
+
     .nav {
         justify-content: flex-start;
     }
@@ -601,7 +610,6 @@ footer {
 
     }
 
-
     .logo-header{
         width: 156px;
         z-index: 0;
@@ -617,13 +625,11 @@ footer {
 
 /**Page d'accueil (Mobile)**/
 
-
-
     .img-feuille-gauche img, .img-feuille-droite img {
         display: none;
     }
 
-    .curved-background2 {
+   .curved-background2 {
         background-image: none;
     }
 
@@ -671,13 +677,13 @@ footer {
         gap: 50px;
     }
 
-    .has-text-align-left {
+    /*.has-text-align-left {
         text-align: center;
-    }
-
+    }*/
 
 
 /**Page Nous rencontrer (Mobile)**/
+
     h1 {
         position: relative;
         z-index: 0;
@@ -730,14 +736,17 @@ footer {
     .group-img-equipe {
         padding-top: 30px;
     }
-    
-    .wp-block-column.is-layout-flow.wp-block-column-is-layout-flow {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
 /**Page Commander (Mobile)**/
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .p-chez-planty-txt {
+        padding-top: 40px;
+    }
+
     .parfums-container {
         width: 100%;
         margin: auto;
@@ -757,42 +766,56 @@ footer {
     .barre-verticale-commandes {
         display: none;
     }
+    /*Formulaire de commande*/
 
+    .vos-informations, .livraison {
+        max-width: 100%;
+    }
+
+}
+
+/**barre de séparation formulaire de commande uniquement**/
+
+@media screen and (max-width: 767px) {
+
+    .barre-verticale-commandes {
+        display: none;
+    }
 }
 
 /**Tablette**/
 @media screen and (min-width: 678px) and (max-width: 1024px) {
 
+    .post-19 .entry-content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
 /**Page d'accueil (Tablette)**/
 
-.img-feuille-gauche, .img-feuille-droite {
-    display: none;
-}
+    .img-feuille-gauche, .img-feuille-droite {
+        display: none;
+    }
 
-.img-container-cq-pensent {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+    .img-container-cq-pensent {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 
-.has-text-align-left {
-    text-align: center;
-}
-
-.gap-suppression {
-    gap: 0;
-}
+    .gap-suppression {
+        gap: 0;
+    }
 
 /**Page Nous rencontrer (Tablette)**/
 
-.group-image-equipe img.wp-image-76 {
-    display: none;
-}
+    .group-image-equipe img.wp-image-76 {
+        display: none;
+    }
 
-.fleur2 {
-    display: none;
-}
-
+    .fleur2 {
+        display: none;
+    }
     
 /**Page Commander (Tablette)**/
 
@@ -811,6 +834,12 @@ footer {
     .img-parfums-framboise,
     .img-parfums-citron {
         width: 100%;
+    }
+
+    /*Formulaire de commande*/
+
+    .vos-informations, .livraison {
+        max-width: 100%;
     }
 
 }
