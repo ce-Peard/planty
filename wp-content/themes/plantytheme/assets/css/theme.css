@@ -132,12 +132,13 @@ footer {
 
 .btn-command a {
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .btn-command:hover {
-    background-color: #C02E44
-}
+    background-color: #C02E44;
 
+}
 
 .nav .nav-hamburger {/**menu hamburger**/
     display:none;
@@ -588,7 +589,7 @@ footer {
 
     nav.responsive .menu-principal-container {
         display:block;
-        z-index: 1;
+        z-index: 5;
         height: 100%;
         position: relative;
         top: 80px;
@@ -629,18 +630,20 @@ footer {
         display: none;
     }
 
-   .curved-background2 {
+   /*.curved-background2 {
         background-image: none;
-    }
+    }*/
 
     .titre-energie-des-plantes {
-            background-color: white;
-            padding-top: 80px;
+        padding-top: 80px;
     }
 
     .energie-des-plantes-container {
-        padding-bottom: 60px;
-        background-color: white;
+        height: 315px;
+    }
+
+    .energie-des-plantes-container p {
+        padding-bottom: 30px;
     }
 
     .p-les-gouts {
@@ -655,7 +658,6 @@ footer {
         color: #3B8E46;
         padding-top: 60px;
         padding-bottom: 50px;
-        background-color: #FFFFFF;
         font-size: 25px;
        }
 
@@ -676,6 +678,11 @@ footer {
     .container-cq-pensent {
         gap: 50px;
     }
+
+    .container-cq-pensent p, .container-cq-pensent h3 {
+        text-align: center;
+    }
+
 
     /*.has-text-align-left {
         text-align: center;
@@ -808,7 +815,7 @@ footer {
 
     nav.responsive .menu-principal-container {
         display:block;
-        z-index: 1;
+        z-index: 5;
         height: 100%;
         position: relative;
         top: 80px;
@@ -846,6 +853,10 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: center;
+    }
+
+    .container-cq-pensent p, .container-cq-pensent h3 {
+        text-align: center;
     }
 
     .gap-suppression {

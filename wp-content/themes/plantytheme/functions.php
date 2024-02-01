@@ -10,12 +10,15 @@ function theme_enqueue_styles()
 }
 
 
-function wp_nav_menu_admin($admin) {
+add_filter('wp_nav_menu_items', 'ma_fonction');
+function ma_fonction($menu_actuel) {
     if (is_user_logged_in()) {
-        return '<li class="menu-contact menu-item"><a href=" ' . get_admin_url() . ' ">Admin</a></li>' . $admin;
+        $lien_admin = '<li class="menu-contact menu-item"><a class="menu-link" href="' . get_admin_url() . '">Admin</a></li>';
+        $position_first_item_li = strpos($menu_actuel, '</li>'); 
+        $menu_actuel = substr_replace($menu_actuel, $lien_admin, $position_first_item_li, 0);
+
+        return $menu_actuel;
     }
 
-    return $admin;
+    return $menu_actuel;
 }
-
-add_filter('wp_nav_menu_items', 'wp_nav_menu_admin');
