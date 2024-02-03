@@ -152,15 +152,6 @@ footer {
 
 /**PAGE D'ACCUEIL**/
 
-/**.canette-page-accueil {
-    height: 620px;
-    background-color: transparent;
-    background: 
-        url("/planty/wp-content/uploads/2024/01/cannette-planty.png") center no-repeat ,
-        url("/planty/wp-content/uploads/2024/01/feuille-gauche.png") left 38% bottom 45% no-repeat,
-        url("/planty/wp-content/uploads/2024/01/feuille-droite.png") right 39% bottom 45% no-repeat;
-}**/
-
 
                                     /**TITLE**/
 
@@ -200,6 +191,14 @@ footer {
     background-repeat: no-repeat;
 }
 
+/*.energie-des-plantes-container {
+    height: 425px;
+    background-image: url(/planty/wp-content/uploads/2024/01/curved-background1.png), url(/planty/wp-content/uploads/2024/02/curved-background1_grey.png);
+    background-size: 100%, 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-position-y: bottom;
+}*/
+
 .titre-energie-des-plantes {
     color: #3B8E46;
     padding-top: 130px;
@@ -215,7 +214,7 @@ footer {
 
 .titre-les-gouts {
     color: #D2776A;
-    padding-top: 48px;
+    padding-top: 83px;
     padding-bottom: 7px;
 }
 
@@ -572,7 +571,7 @@ footer {
         font-size: 24px;
     }
 
-    /**Header**/
+    /**Header mobile**/
 
     .nav {
         justify-content: flex-start;
@@ -582,7 +581,7 @@ footer {
         display: none;
      }
 
-    .nav .nav-hamburger {/**menu hamburger**/
+    .nav .nav-hamburger {/**menu hamburger mobile**/
         display:block;
         z-index: 1;
     }
@@ -629,10 +628,6 @@ footer {
     .img-feuille-gauche img, .img-feuille-droite img {
         display: none;
     }
-
-   /*.curved-background2 {
-        background-image: none;
-    }*/
 
     .titre-energie-des-plantes {
         padding-top: 80px;
@@ -845,8 +840,41 @@ footer {
     
 /**Page d'accueil (Tablette)**/
 
+
     .img-feuille-gauche, .img-feuille-droite {
         display: none;
+    }
+
+    .titre-energie-des-plantes {
+        padding-top: 100px;
+    }
+
+    .energie-des-plantes-container {
+        height: 100%;
+    }
+
+    .energie-des-plantes-container p {
+        padding-bottom: 80px;
+    }
+
+    .p-les-gouts {
+        padding-bottom: 40px;
+    }
+
+    .parfums-container {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-parfums-fraise,
+    .img-parfums-pamplemousse,
+    .img-parfums-framboise,
+    .img-parfums-citron {
+        width: 100%;
     }
 
     .img-container-cq-pensent {
@@ -863,6 +891,7 @@ footer {
         gap: 0;
     }
 
+
 /**Page Nous rencontrer (Tablette)**/
 
     .group-image-equipe img.wp-image-76 {
@@ -875,22 +904,6 @@ footer {
     
 /**Page Commander (Tablette)**/
 
-    .parfums-container {
-        width: 100%;
-        margin: auto;
-        margin-top: 48px;
-        margin-bottom: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .img-parfums-fraise,
-    .img-parfums-pamplemousse,
-    .img-parfums-framboise,
-    .img-parfums-citron {
-        width: 100%;
-    }
 
     /*Formulaire de commande*/
 
